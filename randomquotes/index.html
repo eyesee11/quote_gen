@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<script src="./script.js" defer></script>
+<body>
+    <div class="layer template1">
+        <button id="category" onclick="showCategories()">Category</button>
+
+        <div class="category-buttons-container">
+            <button class="category-button" onclick="selectCategory('Mine')">Mine</button>
+            <button class="category-button" onclick="selectCategory('Motivational')">Motivational</button>
+            <button class="category-button" onclick="selectCategory('Humorous')">Humorous</button>
+        </div>
+        <div class="quote-container template2">
+            <p id="quote-text">This is a quote.</p>
+            <button id="new-quote-button" onclick="generateRandomQuote()">New Quote</button>
+        </div>
+    </div>
+    
+
+</body>
+</html>
